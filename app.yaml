@@ -15,7 +15,7 @@
 # [START all]
 # [START step_2]
 # [START step_1]
-entrypoint: bundle exec rails server -p $PORT
+entrypoint: bundle exec rackup --port $PORT
 env: flex
 runtime: ruby
 # [END step_1]
