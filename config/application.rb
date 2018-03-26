@@ -36,5 +36,8 @@ module IamAssignment
         resource '*', :headers => :any, :methods => [:get, :post, :options]
       end
     end
+
+    # Make sure lib/ is loaded
+    config.autoload_paths << Rails.root.join('lib')
   end
 end

@@ -46,3 +46,6 @@ gem "appengine", "~> 0.4.5"
 
 # Proper user password encryption
 gem 'bcrypt', '~> 3.1.7'
+
+# API authorization
+gem 'jwt'

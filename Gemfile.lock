@@ -208,6 +208,7 @@ DEPENDENCIES
   appengine (~> 0.4.5)
   bcrypt (~> 3.1.7)
   byebug
+  jwt
   listen (>= 3.0.5, < 3.2)
   mysql2 (~> 0.3.21)
   puma (~> 3.7)
