@@ -1,0 +1,29 @@
+# Copyright 2017 Google, Inc
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# [START all]
+# [START step_2]
+# [START step_1]
+entrypoint: bundle exec rails server -p $PORT
+env: flex
+runtime: ruby
+# [END step_1]
+
+env_variables:
+  SECRET_KEY_BASE: 60d1395b2187bda88b756f6eef6462267d40fda82dce998cc0566bf9acf989beeeac5f6cdecbb7e6fc59d2fd007c8145e99cb10af6bc19040891980073b76358
+# [END step_2]
+
+beta_settings:
+  cloud_sql_instances: iam-assignment-199121:europe-west3:mysql-db
+# [END all]

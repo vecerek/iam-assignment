@@ -22,4 +22,8 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: mysql2
+  username: "root"
+  password: "iam_strong_pw"
+  database: "iam_assignment"
+  socket: "/cloudsql/iam-assignment-199121:europe-west3:mysql-db"
