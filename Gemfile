@@ -43,3 +43,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Google Cloud Platform
 gem "mysql2", "~> 0.3.21"
 gem "appengine", "~> 0.4.5"
+
+# Proper user password encryption
+gem 'bcrypt', '~> 3.1.7'
