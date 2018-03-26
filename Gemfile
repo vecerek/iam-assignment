@@ -49,3 +49,6 @@ gem 'bcrypt', '~> 3.1.7'
 
 # API authorization
 gem 'jwt'
+
+# M-C connector (MVC)
+gem 'simple_command'
