@@ -37,6 +37,11 @@ module IamAssignment
       end
     end
 
+    # Fix JsonWebToken uninitialized constant error in Production
+    # http://guides.rubyonrails.org/upgrading_ruby_on_rails.html#autoloading-is-disabled-after-booting-in-the-production-environment
+    #
+    config.enable_dependency_loading = true
+    
     # Make sure lib/ is loaded
     config.autoload_paths << Rails.root.join('lib')
   end
